@@ -1,0 +1,1171 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <link rel="canonical" href="https://blog.csdn.net/javaandroid730/article/details/53522872"/> 
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="referrer" content="always">
+    <meta name="description" content="GitHub和Git入门
+
+考虑到大家以前可能对版本控制工具和Linux命令行工具都不了解，我写了一个简单的博客来让大家学会入门使用方法。
+GitHub的简单使用
+第一步 创建GitHub账号
+1. 打开GitHub官网。
+2. 点击绿色按钮Sign up for GitHub，填写用户名，邮件地址和密码。
+
+
+注意：
+
+用户名只能包含字母和&quot;-&quot;字符密码至少包含一个字母，一" />
+    <meta name="keywords" content="Git使用,GitHub使用" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" /><link rel="alternate" media="handheld" href="#" />
+    <meta name="shenma-site-verification" content="5a59773ab8077d4a62bf469ab966a63b_1497598848">
+    <script src="https://csdnimg.cn/release/phoenix/vendor/tingyun/tingyun-rum-blog.js"></script>
+
+    <link href="https://csdnimg.cn/public/favicon.ico" rel="SHORTCUT ICON">
+    <title>入门级：GitHub和Git超超超详细使用教程！ - CSDN博客</title>
+    
+            <link rel="stylesheet" href="https://csdnimg.cn/release/phoenix/template/css/detail-57e3201eaa.min.css">
+        <link rel="stylesheet" href="https://csdnimg.cn/release/phoenix/themes/skin3-template/skin3-template-88717cedf2.min.css">
+
+    <script type="text/javascript">
+        var username = "javaandroid730";
+        var blog_address = "https://blog.csdn.net/javaandroid730";
+        var static_host = "https://csdnimg.cn/release/phoenix/";
+        var currentUserName = ""; 
+        var isShowAds = true;
+        var isOwner = false;
+        var loginUrl = "https://passport.csdn.net/account/login?from=https://blog.csdn.net/javaandroid730/article/details/53522872"
+        var blogUrl = "https://blog.csdn.net/";
+        //页面皮肤样式
+        var curSkin = "skin3-template";
+    </script>
+    <script type="text/javascript">
+        // Traffic Stats of the entire Web site By baidu
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?6bcd52f51e9b3dce32bec4a3997715ac";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+        // Traffic Stats of the entire Web site By baidu end
+    </script>
+    <script src="https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="https://csdnimg.cn/rabbit/exposure-click/main-1.0.6.js"></script>
+    <!-- 新版上报 -->
+    <script src="//g.csdnimg.cn/track/1.0.1/track.js" type="text/javascript"></script>
+    <!-- 新版上报end -->
+            <link rel="stylesheet" href="https://csdnimg.cn/public/sandalstrap/1.3/css/sandalstrap.min.css"> 
+    <style>
+        .MathJax, .MathJax_Message, .MathJax_Preview{
+            display: none
+        }
+    </style>
+</head>
+<body>    
+    <link rel="stylesheet" href="https://csdnimg.cn/public/common/toolbar/content_toolbar_css/content_toolbar.css">
+    <script id="toolbar-tpl-scriptId" src="https://csdnimg.cn/public/common/toolbar/js/content_toolbar.js" type="text/javascript" domain="https://blog.csdn.net/"></script>
+    <script src="https://csdnimg.cn/public/sandalstrap/1.3/fonts/csdnc/csdnc.js"></script><link rel="stylesheet" href="https://csdnimg.cn/release/phoenix/template/css/blog_code-c3a0c33d5c.css">
+<link rel="stylesheet" href="https://csdnimg.cn/release/phoenix/vendor/pagination/paging.css">
+<script type="text/javascript" src="//static.mediav.com/js/mvf_news_feed.js"></script>
+<div style="display:none;">
+	<img src="" onerror='setTimeout(function(){if(!/(csdn.net|iteye.com|baiducontent.com|googleusercontent.com|360webcache.com|sogoucdn.com|bingj.com|baidu.com)$/.test(window.location.hostname)){window.location.href="\x68\x74\x74\x70\x73\x3a\x2f\x2f\x77\x77\x77\x2e\x63\x73\x64\x6e\x2e\x6e\x65\x74"}},3000);'>
+</div>
+<link rel="stylesheet" href="https://csdnimg.cn/release/phoenix/template/css/chart-3456820cac.css" />
+
+
+<header>
+	<div class="container d-flex clearfix">
+		<div class="title-box">
+			<h2 class="title-blog">
+				<a href="https://blog.csdn.net/javaandroid730">FynnJason的技术屋</a>
+			</h2>
+			<p class="description">这个世界，有些人快速努力着，而有些人睡醒了，发现世界已经改变了</p>
+		</div>
+		<div class="opt-box d-flex justify-content-end">
+			<a class="btn btn-sm" href="https://blog.csdn.net/javaandroid730/rss/list">
+					<svg class="icon" aria-hidden="true">
+						<use xlink:href="#csdnc-rss"></use>
+					</svg>RSS订阅</a>
+					</div>
+	</div>
+</header><script src="https://dup.baidustatic.com/js/ds.js"></script>
+<div class="container clearfix pt0" id="mainBox">
+    <main>
+        <div class="blog-content-box">
+	<div class="article-title-box">
+			<span class="article-type type-1 float-left">原</span>		<h1 class="title-article">入门级：GitHub和Git超超超详细使用教程！</h1>
+	</div>
+	<div class="article-info-box">
+		<div class="article-bar-top d-flex">
+												<span class="time">2016年12月08日 19:05:58</span>
+			<div class="float-right">
+				<span class="read-count">阅读数：95798</span>
+											</div>
+		</div>
+	</div>
+	<article>
+		<div id="article_content" class="article_content clearfix csdn-tracking-statistics" data-pid="blog"  data-mod=popu_307  data-dsm = "post" >
+                    <link rel="stylesheet" href="https://csdnimg.cn/release/phoenix/template/css/ck_htmledit_views-e2445db1a8.css" />
+						<div class="htmledit_views">
+                
+<h1>GitHub和Git入门</h1>
+<p style="border:0px;color:rgb(51,51,51);font-family:Helvetica, arial, freesans, clean, sans-serif;font-size:14px;line-height:22.4px;">
+考虑到大家以前可能对版本控制工具和Linux命令行工具都不了解，我写了一个简单的博客来让大家学会入门使用方法。</p>
+<h2>GitHub的简单使用</h2>
+<h3>第一步 创建GitHub账号</h3>
+<h4>1. 打开<a href="https://github.com/" rel="nofollow" style="border:0px;color:rgb(65,131,196);text-decoration:none;">GitHub官网</a>。</h4>
+<h4>2. 点击绿色按钮<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">Sign up for GitHub</code>，填写用户名，邮件地址和密码。</h4>
+<blockquote style="border-width:0px 0px 0px 4px;border-left-style:solid;border-left-color:rgb(221,221,221);color:rgb(119,119,119);font-family:Helvetica, arial, freesans, clean, sans-serif;font-size:14px;line-height:22.4px;">
+<p style="border:0px;">
+注意：</p>
+<ol style="border:0px;"><li style="border:0px;">用户名只能包含字母和"-"字符</li><li style="border:0px;">密码至少包含一个字母，一个数字和七个字符</li></ol></blockquote>
+<h4>3. 点击绿色按钮<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">Create an account</code>，创建账号。</h4>
+<p style="border:0px;color:rgb(51,51,51);font-family:Helvetica, arial, freesans, clean, sans-serif;font-size:14px;line-height:22.4px;">
+<img src="http://7xsct4.com1.z0.glb.clouddn.com/16-6-23/9614107.jpg" alt="" style="border:0px;" /></p>
+<h4>4. 在下一个页面点击绿色按钮<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">Finish sign</code>完成注册。</h4>
+<p style="border:0px;color:rgb(51,51,51);font-family:Helvetica, arial, freesans, clean, sans-serif;font-size:14px;line-height:22.4px;">
+<img src="http://7xsct4.com1.z0.glb.clouddn.com/16-6-23/72498223.jpg" alt="" style="border:0px;" /></p>
+<p style="border:0px;color:rgb(51,51,51);font-family:Helvetica, arial, freesans, clean, sans-serif;font-size:14px;line-height:22.4px;">
+现在，你的GitHub账号就创建好了。请先在你的注册邮箱中完成邮件验证，然后可以看看GitHub提供的<a href="https://guides.github.com/activities/hello-world/" rel="nofollow" style="border:0px;color:rgb(65,131,196);text-decoration:none;">新手文档</a>，我们也提供了这一文档的中文版。</p>
+<h3>第二步 创建一个GitHub开发者应用</h3>
+<h4>1. 点击右上角你的头像，在下拉菜单中选择<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">Settings</code>。</h4>
+<p style="border:0px;color:rgb(51,51,51);font-family:Helvetica, arial, freesans, clean, sans-serif;font-size:14px;line-height:22.4px;">
+<img src="http://7xsct4.com1.z0.glb.clouddn.com/16-6-23/92452725.jpg" alt="" style="border:0px;" /></p>
+<h4>2. 在左边的<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">Personal settings</code>(个人设置)中选择<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">OAuth
+ applications</code>，再在右侧选择<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">Developer applications</code>。</h4>
+<p style="border:0px;color:rgb(51,51,51);font-family:Helvetica, arial, freesans, clean, sans-serif;font-size:14px;line-height:22.4px;">
+<img src="http://7xsct4.com1.z0.glb.clouddn.com/16-6-23/59841864.jpg" alt="" style="border:0px;" /></p>
+<h4>3. 点击上图中的绿色按钮<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">Register a new application</code>，填写应用名称，你的主页，应用描述和回调URL。</h4>
+<p style="border:0px;color:rgb(51,51,51);font-family:Helvetica, arial, freesans, clean, sans-serif;font-size:14px;line-height:22.4px;">
+<img src="http://7xsct4.com1.z0.glb.clouddn.com/16-6-23/8770535.jpg" alt="" style="border:0px;" /></p>
+<h4>4. 点击上图中的绿色按钮<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">Register applciation</code>注册应用，注册成功后，记住下一页中的Client
+ ID和Client Secret值。</h4>
+<p style="border:0px;color:rgb(51,51,51);font-family:Helvetica, arial, freesans, clean, sans-serif;font-size:14px;line-height:22.4px;">
+<img src="http://7xsct4.com1.z0.glb.clouddn.com/16-6-23/94579538.jpg" alt="" style="border:0px;" /></p>
+<p style="border:0px;color:rgb(51,51,51);font-family:Helvetica, arial, freesans, clean, sans-serif;font-size:14px;line-height:22.4px;">
+OK，现在你就可以使用此Client ID和Client Secret做GitHub三方登录了。</p>
+<h2>Git的简单使用</h2>
+<h3>第一步 下载<a href="https://git-for-windows.github.io/" rel="nofollow" style="border:0px;color:rgb(65,131,196);text-decoration:none;">Git for Windows</a></h3>
+<h4>1. 在官网点击<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">Download</code>，下载对应的exe文件，注意你的操作系统是32位还是64位。</h4>
+<h4>2. 双击安装，中间不用做任何改动，一直下一步就行。如果你想修改安装位置，请放在纯英文路径下。</h4>
+<h4>3. 安装成功，你现在就可以使用git命令行工具了。在你想要下载代码的路径，点击鼠标右键，选择<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">Git
+ Bash here</code>。注意，你的代码路径也应是纯英文的。</h4>
+<h4>4. Git Bash使用的是MinGW，其界面如下图所示：</h4>
+<p style="border:0px;color:rgb(51,51,51);font-family:Helvetica, arial, freesans, clean, sans-serif;font-size:14px;line-height:22.4px;">
+<img src="http://7xsct4.com1.z0.glb.clouddn.com/16-6-23/20857114.jpg" alt="" style="border:0px;" /></p>
+<h3>第二步 创建一个本地<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">hello-world</code>仓库</h3>
+<h4>1. 在命令行输入 <code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">mkdir hello-word</code>，创建一个新文件夹。你可以使用<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">ls</code>命令来查看当前目录下有哪些文件和文件夹。</h4>
+<h4>2. 输入<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">cd hello-world</code>进入新文件夹，注意在输入命令时，你可以用<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">Tab</code>键来自动补全。</h4>
+<h4>3. 输入<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">git init</code>初始化Git仓库。此时用<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">ls
+ -a</code>查看当前目录，可以看到多了一个<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">.git/</code>的文件夹，此文件夹保存了版本控制的所有相关信息。</h4>
+<p style="border:0px;color:rgb(51,51,51);font-family:Helvetica, arial, freesans, clean, sans-serif;font-size:14px;line-height:22.4px;">
+<img src="http://7xsct4.com1.z0.glb.clouddn.com/16-6-23/90302976.jpg" alt="" style="border:0px;" /></p>
+<blockquote style="border-width:0px 0px 0px 4px;border-left-style:solid;border-left-color:rgb(221,221,221);color:rgb(119,119,119);font-family:Helvetica, arial, freesans, clean, sans-serif;font-size:14px;line-height:22.4px;">
+<p style="border:0px;">
+注意，在此处使用的所有命令，如果你是在Linux环境下开发，用法都是完全一样的。所以对于完全没有Linux使用经验的学员，这也是一个开始接触Linux工作方式的好方法。</p>
+</blockquote>
+<p style="border:0px;color:rgb(51,51,51);font-family:Helvetica, arial, freesans, clean, sans-serif;font-size:14px;line-height:22.4px;">
+接下来，让我们创建一份简单的说明文件，并提交到版本库中。</p>
+<h4>4. 输入<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">echo "This is a simple practise"
+ &gt; readme.txt</code>，创建一个<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">readme.txt</code>文件。</h4>
+<h4>5. 输入<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">git status</code>查看当前版本库状态，在<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">Untracked
+ files</code>(未跟踪文件)下，会出现红色的<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">readme.txt</code>，代表此文件还未被Git所管理。</h4>
+<p style="border:0px;color:rgb(51,51,51);font-family:Helvetica, arial, freesans, clean, sans-serif;font-size:14px;line-height:22.4px;">
+<img src="http://7xsct4.com1.z0.glb.clouddn.com/16-6-23/49562470.jpg" alt="" style="border:0px;" /></p>
+<h4>6. 使用<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">git add readme.txt</code>，将该文件加入缓冲区，如果你确定所有的修改都需要提交，可以使用<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">git
+ add .</code>来加入所有修改。现在用<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">git status</code>查看，将看到文件名变为绿色。</h4>
+<h4>7. 使用<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">git commit -m "This is my first
+ commit via Git!"</code>来提交修改，-m后面所带的参数是本次提交信息，一般用来记录本次提交的主要意图。</h4>
+<p style="border:0px;color:rgb(51,51,51);font-family:Helvetica, arial, freesans, clean, sans-serif;font-size:14px;line-height:22.4px;">
+<img src="http://7xsct4.com1.z0.glb.clouddn.com/16-6-23/81441928.jpg" alt="" style="border:0px;" /></p>
+<h4>8. 提交成功后，可以用<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">git log</code>查看历史提交记录。每个记录都会有提交id，作者和提交日期。</h4>
+<h4>9. 你可以用<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">git branch</code>查看当前有哪些分支，当然，因为我们没有创建任何分支，目前只会有一个<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">master</code>分支。</h4>
+<h4>10. 使用<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">git checkout -b feature</code>创建一个名为<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">feature</code>的分支，再用<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">git
+ branch</code>查看一下。</h4>
+<p style="border:0px;color:rgb(51,51,51);font-family:Helvetica, arial, freesans, clean, sans-serif;font-size:14px;line-height:22.4px;">
+<img src="http://7xsct4.com1.z0.glb.clouddn.com/16-6-23/5725545.jpg" alt="" style="border:0px;" /></p>
+<p style="border:0px;color:rgb(51,51,51);font-family:Helvetica, arial, freesans, clean, sans-serif;font-size:14px;line-height:22.4px;">
+以上是最最基本的Git操作，大家可以在此<code style="border:1px solid rgb(234,234,234);font-size:12px;font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">hello-world</code>项目中随意尝试各种其他Git命令，最好的参考资料是<a href="https://git-scm.com/book/zh/v2" rel="nofollow" style="border:0px;color:rgb(65,131,196);text-decoration:none;">Pro
+ Git book</a>。</p>
+<blockquote style="border-width:0px 0px 0px 4px;border-left-style:solid;border-left-color:rgb(221,221,221);color:rgb(119,119,119);font-family:Helvetica, arial, freesans, clean, sans-serif;font-size:14px;line-height:22.4px;">
+<p style="border:0px;">
+注意：学会Git的唯一方式是在实际使用中学习，切记不要尝试先记住一大堆理论知识或者Git命令。</p>
+</blockquote>
+<h2>项目的下载，查看和修改</h2>
+<h3>第一步. 从GitHub上下载我们的项目代码。</h3>
+<h4>1. 以<a href="https://github.com/feicui-android/Hello-World" rel="nofollow" style="border:0px;color:rgb(65,131,196);text-decoration:none;">Hello-World</a>项目为例，点击绿色按钮<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">Clone
+ or download</code>，然后在弹出窗口中点击剪切板图标，复制仓库的URL。</h4>
+<p style="border:0px;color:rgb(51,51,51);font-family:Helvetica, arial, freesans, clean, sans-serif;font-size:14px;line-height:22.4px;">
+<img src="http://7xsct4.com1.z0.glb.clouddn.com/16-6-23/35677312.jpg" alt="" style="border:0px;" /></p>
+<h4>2. 在git bash中输入<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">git clone https://github.com/feicui-android/Hello-World.git</code>，下载项目源码。</h4>
+<h3>第二步. 查看版本历史</h3>
+<h4>1. <code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">cd</code>到项目文件夹下，使用<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">git
+ log</code>能看到我们的历史提交记录。</h4>
+<h4>2. 要回到某一历史版本，可以使用<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">git checkout commitId</code>，看完后要回到最新代码，使用<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">git
+ checkout master</code>。</h4>
+<h3>第三步. 本地修改代码</h3>
+<p style="border:0px;color:rgb(51,51,51);font-family:Helvetica, arial, freesans, clean, sans-serif;font-size:14px;line-height:22.4px;">
+你可以在我们的代码基线上任意修改，但为了下载新代码时不出现冲突，请遵循以下步骤：</p>
+<h4>1. 下载新代码：<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">git pull</code>。</h4>
+<h4>2. 从<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">master</code>出捡出一个新的分支：<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">git
+ checkout -b feature</code>。<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">feature</code>是分支名称，你可以随意取名，但请用英文。</h4>
+<h4>3. 在feature分支上随意修改，改完后你可以提交你的修改：<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">git commit
+ -m "some message"</code>。</h4>
+<h4>4. 此时要同步代码，请先切回主分支：<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">git checkout master</code>，然后更新<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">git
+ pull</code>。</h4>
+<h4>5. 如果想删除自己建立的分支，使用<code style="border:1px solid rgb(234,234,234);font-family:Consolas, 'Liberation Mono', Courier, monospace;background-color:rgb(248,248,248);">git branch -D feature</code>，注意执行此命令后分支被强制删除，无法恢复。</h4>
+            </div>
+                </div>
+				<div class="hide-article-box text-center">
+			<a class="btn btn-red-hollow" id="btn-readmore" data-track-view='{"mod":"popu_376","con":",https://blog.csdn.net/javaandroid730/article/details/53522872,"}' data-track-click='{"mod":"popu_376","con":",https://blog.csdn.net/javaandroid730/article/details/53522872,"}'>阅读更多</a>
+		</div>
+        	</article>
+	
+		<div class="article-bar-bottom">
+				<div class="article-copyright">
+			版权声明：本文为博主原创文章，转载请注明出处！			https://blog.csdn.net/JavaAndroid730/article/details/53522872		</div>
+						<div class="tags-box artic-tag-box">
+			<span class="label">文章标签：</span>
+						<a class="tag-link" href="http://so.csdn.net/so/search/s.do?q=Git使用&t=blog" target="_blank">Git使用						<a class="tag-link" href="http://so.csdn.net/so/search/s.do?q=GitHub使用&t=blog" target="_blank">GitHub使用						<a class="tag-link" href="http://so.csdn.net/so/search/s.do?q=Git教程&t=blog" target="_blank">Git教程						<a class="tag-link" href="http://so.csdn.net/so/search/s.do?q=Android&t=blog" target="_blank">Android						<a class="tag-link" href="http://so.csdn.net/so/search/s.do?q=代码管理&t=blog" target="_blank">代码管理						</a>
+		</div>
+						<div class="tags-box">
+			<span class="label">个人分类：</span>
+						<a class="tag-link" href="https://blog.csdn.net/javaandroid730/article/category/6508850"  target="_blank">Android核心						</a>
+		</div>
+								<div class="tags-box hot-word">
+			<span class="label">相关热词：</span>
+						<a class="tag-link" href="https://blog.csdn.net/u013698770/article/details/54289764" target="_blank">
+			入门级电脑配置			</a>
+						<a class="tag-link" href="https://blog.csdn.net/sd19871122/article/details/60955281" target="_blank">
+			入门级人工智能			</a>
+						<a class="tag-link" href="https://blog.csdn.net/enweitech/article/details/51461432" target="_blank">
+			入门级私有云			</a>
+						<a class="tag-link" href="https://blog.csdn.net/gla2018/article/details/80292485" target="_blank">
+			阿里云入门级			</a>
+						<a class="tag-link" href="https://blog.csdn.net/u010074690/article/details/80202158" target="_blank">
+			java入门级			</a>
+					</div>
+			</div>
+	
+	<!-- !empty($pre_next_article[0]) -->
+			<div class="related-article related-article-prev text-truncate">
+		<a href="https://blog.csdn.net/javaandroid730/article/details/53511123">
+			<span>上一篇</span>最全面和简单适配屏幕工具AutoLayout的使用教程！		</a>
+	</div>
+				<div class="related-article related-article-next text-truncate">
+		<a href="https://blog.csdn.net/javaandroid730/article/details/53544365">
+			<span>下一篇</span>快速申请Android6.0权限教程！		</a>
+	</div>
+	</div>
+<script>
+    $(".MathJax").remove();
+</script>
+
+<script type="text/javascript" src="https://static-blog.csdn.net/mdeditor/public/res/bower-libs/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+			"HTML-CSS": {
+					linebreaks: { automatic: true, width: "94%container" },
+					imageFont: null
+			},
+			tex2jax: {
+				preview: "none"
+			},
+			mml2jax: {
+				preview: 'none'
+			}
+	});
+</script>
+<script>
+	(function(){
+		var btnReadmore = $("#btn-readmore");
+		if(btnReadmore.length>0){
+			var winH = $(window).height();
+			var articleBox = $("div.article_content");
+			var artH = articleBox.height();
+			if(artH > winH*2){
+				articleBox.css({
+					'height':winH*2+'px',
+					'overflow':'hidden'
+				})
+				btnReadmore.click(function(){
+					articleBox.removeAttr("style");
+					$(this).parent().remove();
+				})
+			}else{
+				btnReadmore.parent().remove();
+			}
+		}
+	})()
+</script>        <div data-track-view='{"mod":"popu_625","con": ",https://blog.csdn.net/javaandroid730/article/details/53522872,from_360"}' style="margin-top: 8px;padding: 20px;background-color: #fff;overflow: hidden;" id="adt0"></div>
+            <script>
+                var adWidth = $("div.blog-content-box").outerWidth() - 40;
+                NEWS_FEED({
+                    w: adWidth,
+                    h : 130,
+                    showid : "s02a31",
+                    placeholderId: "adt0",
+                    inject : "define",
+                    define : {
+                    imagePosition : "left",
+                    imageBorderRadius : 0,
+                    imageWidth: 231,
+                    imageHeight: 130,
+                    imageFill : "clip",
+                    displayImage : true,
+                    displayTitle : true,
+                    titleFontSize: 20,
+                    titleFontColor: "#333",
+                    titleFontFamily : "Microsoft Yahei",
+                    titleFontWeight: "bold",
+                    titlePaddingTop : 0,
+                    titlePaddingRight : 0,
+                    titlePaddingBottom : 10,
+                    titlePaddingLeft : 16,
+                    displayDesc : true,
+                    descFontSize: 14,
+                    descFontColor: "#6b6b6b",
+                    descFontFamily : "Microsoft Yahei",
+                    paddingTop : 0,
+                    paddingRight : 0,
+                    paddingBottom : 0,
+                    paddingLeft : 0,
+                    backgroundColor: "#fff",
+                    hoverColor: "#ca0c16"
+                    }
+                })
+            </script>        <a id="commentBox"></a>
+<div class="comment-box">
+	  	<div class="unlogin-box text-center">
+		想对作者说点什么？
+		<!-- $curl 当前地址 -->
+		<a href="https://passport.csdn.net/account/login?from=https://blog.csdn.net/javaandroid730/article/details/53522872#commentBox" class="btn btn-sm btn-red">我来说一句</a>
+	</div>
+			<div class="comment-list-container">
+		<a id="comments"></a>
+		<div class="comment-list-box">
+		</div>
+		<div id="commentPage" class="pagination-box d-none"></div>
+		<div class="opt-box text-center">
+			<button class="btn btn-sm btn-link-blue" id="btnMoreComment"></button>
+		</div>
+	</div>
+</div>        <div class="recommend-box">
+            		<div class="recommend-item-box" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/rj597306518/article/details/71307757,BlogCommendFromBaidu_1"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/rj597306518/article/details/71307757,BlogCommendFromBaidu_1"}'>
+		<h4 class="text-truncate">
+			<a href="https://blog.csdn.net/rj597306518/article/details/71307757" target="_blank">
+				【<em>Github</em>教程】史上最全<em>github</em>使用方法：<em>github</em>入门到精通			</a>
+		</h4>
+		<p class="content">
+			<a href="https://blog.csdn.net/rj597306518/article/details/71307757" target="_blank" >
+				【初识Github】
+首先让我们大家一起喊一句“Hello Github”。YEAH!就是这样。
+
+Git是一个分布式的版本控制系统，最初由Linus Torvalds编写，用作Linux内核代码的管...			</a>
+		</p>
+		<div class="info-box d-flex align-content-center">
+			<p>
+				<a class="avatar" src="https://blog.csdn.net/rj597306518" title="rj597306518" target="_blank">
+					<img src="https://avatar.csdn.net/E/8/5/3_rj597306518.jpg" alt="rj597306518" class="avatar-pic">
+					<span class="name">rj597306518</span>
+				</a>
+			</p>
+			<p>
+				<span class="date">2017-05-07 08:47:20</span>
+			</p>
+			<p>
+				<span class="read-num">阅读数：18355</span>
+			</p>
+		</div>
+	</div>
+					<div class="recommend-item-box" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/Hanani_Jia/article/details/77950594,BlogCommendFromBaidu_0"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/Hanani_Jia/article/details/77950594,BlogCommendFromBaidu_0"}'>
+		<h4 class="text-truncate">
+			<a href="https://blog.csdn.net/Hanani_Jia/article/details/77950594" target="_blank">
+				<em>GitHub</em> 新手<em>详细</em>教程			</a>
+		</h4>
+		<p class="content">
+			<a href="https://blog.csdn.net/Hanani_Jia/article/details/77950594" target="_blank" >
+				这篇文章是我写的关于GitHub的详细教程可能会有错误，或者写的不全面。如果有问题可以随时留言或者联系。github网页版使用教程，github桌面版使用教程，github网页版上传文件夹。...			</a>
+		</p>
+		<div class="info-box d-flex align-content-center">
+			<p>
+				<a class="avatar" src="https://blog.csdn.net/Hanani_Jia" title="Hanani_Jia" target="_blank">
+					<img src="https://avatar.csdn.net/2/D/C/3_hanani_jia.jpg" alt="Hanani_Jia" class="avatar-pic">
+					<span class="name">Hanani_Jia</span>
+				</a>
+			</p>
+			<p>
+				<span class="date">2017-09-12 22:15:58</span>
+			</p>
+			<p>
+				<span class="read-num">阅读数：29494</span>
+			</p>
+		</div>
+	</div>
+									<div class="recommend-item-box recommend-ad-box" id="ad1"></div>
+				<script>
+				var width = $("div.recommend-box").outerWidth() - 48;
+					NEWS_FEED({
+						w: width,
+						h : 90,
+						showid : 'GNKXx7',
+						placeholderId: "ad1",
+						inject : 'define',
+						define : {
+							imagePosition : 'left',
+							imageBorderRadius : 0,
+							imageWidth: 120,
+							imageHeight: 90,
+							imageFill : 'clip',
+							displayImage : true,
+							displayTitle : true,
+							titleFontSize: 20,
+							titleFontColor: '#333',
+							titleFontFamily : 'Microsoft Yahei',
+							titleFontWeight: 'bold',
+							titlePaddingTop : 0,
+							titlePaddingRight : 0,
+							titlePaddingBottom : 10,
+							titlePaddingLeft : 16,
+							displayDesc : true,
+							descFontSize: 14,
+							descPaddingLeft: 14,
+							descFontColor: '#6b6b6b',
+							descFontFamily : 'Microsoft Yahei',
+							paddingTop : 0,
+							paddingRight : 0,
+							paddingBottom : 0,
+							paddingLeft : 0,
+							backgroundColor: '#fff',
+							hoverColor: '#ca0c16'
+						}
+					})
+				</script>
+
+			
+				<div class="recommend-item-box" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/ZytheMoon/article/details/79481385,BlogCommendFromBaidu_2"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/ZytheMoon/article/details/79481385,BlogCommendFromBaidu_2"}'>
+		<h4 class="text-truncate">
+			<a href="https://blog.csdn.net/ZytheMoon/article/details/79481385" target="_blank">
+				<em>GitHub</em><em>使用教程</em>			</a>
+		</h4>
+		<p class="content">
+			<a href="https://blog.csdn.net/ZytheMoon/article/details/79481385" target="_blank" >
+				GitHub是为开发者提供的Git仓库的托管服务，这是一个让开发者与同事共享代码的场所。
+
+GitHub和Git的区别，GitHub和Git是完全不同的两个东西，在Git中开发者将代码存入名为Git仓...			</a>
+		</p>
+		<div class="info-box d-flex align-content-center">
+			<p>
+				<a class="avatar" src="https://blog.csdn.net/ZytheMoon" title="ZytheMoon" target="_blank">
+					<img src="https://avatar.csdn.net/F/2/8/3_zythemoon.jpg" alt="ZytheMoon" class="avatar-pic">
+					<span class="name">ZytheMoon</span>
+				</a>
+			</p>
+			<p>
+				<span class="date">2018-03-08 10:55:19</span>
+			</p>
+			<p>
+				<span class="read-num">阅读数：493</span>
+			</p>
+		</div>
+	</div>
+					<div class="recommend-item-box" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/u010480479/article/details/51801337,BlogCommendFromBaidu_7"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/u010480479/article/details/51801337,BlogCommendFromBaidu_7"}'>
+		<h4 class="text-truncate">
+			<a href="https://blog.csdn.net/u010480479/article/details/51801337" target="_blank">
+				<em>GitHub</em><em>使用教程</em>详解（上）——官网操作指南[翻译]			</a>
+		</h4>
+		<p class="content">
+			<a href="https://blog.csdn.net/u010480479/article/details/51801337" target="_blank" >
+				GitHub 指南原文地址：GitHub官网指南示例项目：Hello World十分钟轻松教学在学习计算机语言编程的过程中创建Hello World 项目是一个历史悠久的传统。当你接触一门新事物的时候...			</a>
+		</p>
+		<div class="info-box d-flex align-content-center">
+			<p>
+				<a class="avatar" src="https://blog.csdn.net/u010480479" title="u010480479" target="_blank">
+					<img src="https://avatar.csdn.net/9/0/C/3_u010480479.jpg" alt="u010480479" class="avatar-pic">
+					<span class="name">u010480479</span>
+				</a>
+			</p>
+			<p>
+				<span class="date">2016-07-06 17:48:23</span>
+			</p>
+			<p>
+				<span class="read-num">阅读数：25308</span>
+			</p>
+		</div>
+	</div>
+					<div class="recommend-item-box" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/wshixinshouaaa/article/details/79596036,BlogCommendFromBaidu_23"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/wshixinshouaaa/article/details/79596036,BlogCommendFromBaidu_23"}'>
+		<h4 class="text-truncate">
+			<a href="https://blog.csdn.net/wshixinshouaaa/article/details/79596036" target="_blank">
+				<em>Github</em>使用			</a>
+		</h4>
+		<p class="content">
+			<a href="https://blog.csdn.net/wshixinshouaaa/article/details/79596036" target="_blank" >
+				
+ssh登录github：ssh -T git@github.com
+打开一个文件夹，比如 /usr: cd /usr
+克隆到本地：git clone https://……
+打开文件夹项目已经保存到本...			</a>
+		</p>
+		<div class="info-box d-flex align-content-center">
+			<p>
+				<a class="avatar" src="https://blog.csdn.net/wshixinshouaaa" title="wshixinshouaaa" target="_blank">
+					<img src="https://avatar.csdn.net/5/1/D/3_wshixinshouaaa.jpg" alt="wshixinshouaaa" class="avatar-pic">
+					<span class="name">wshixinshouaaa</span>
+				</a>
+			</p>
+			<p>
+				<span class="date">2018-03-17 21:35:46</span>
+			</p>
+			<p>
+				<span class="read-num">阅读数：73</span>
+			</p>
+		</div>
+	</div>
+					<div class="recommend-item-box" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/hellocsz/article/details/80658926,BlogCommendFromBaidu_8"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/hellocsz/article/details/80658926,BlogCommendFromBaidu_8"}'>
+		<h4 class="text-truncate">
+			<a href="https://blog.csdn.net/hellocsz/article/details/80658926" target="_blank">
+				<em>github</em>  教程（上）			</a>
+		</h4>
+		<p class="content">
+			<a href="https://blog.csdn.net/hellocsz/article/details/80658926" target="_blank" >
+				Git教程 Github详细教程（上）2018年01月17日 16:12:58阅读数：742　　作为一个萌新，我翻遍了网上的Git Bash教程，可能因为我理解力比较差，经常看不懂教程上在说什么。 (...			</a>
+		</p>
+		<div class="info-box d-flex align-content-center">
+			<p>
+				<a class="avatar" src="https://blog.csdn.net/hellocsz" title="hellocsz" target="_blank">
+					<img src="https://avatar.csdn.net/B/F/8/3_hellocsz.jpg" alt="hellocsz" class="avatar-pic">
+					<span class="name">hellocsz</span>
+				</a>
+			</p>
+			<p>
+				<span class="date">2018-06-11 22:36:09</span>
+			</p>
+			<p>
+				<span class="read-num">阅读数：55</span>
+			</p>
+		</div>
+	</div>
+					<div class="recommend-item-box recommend-ad-box" id="a_d_feed_0"></div>
+			<script>
+				var width = $("div.recommend-box").outerWidth() - 48;
+				NEWS_FEED({
+					w: width,
+					h: 90,
+					showid: 'Afihld',
+					placeholderId: 'a_d_feed_0',
+					inject: 'define',
+					define: {
+						imagePosition: 'left',
+						imageBorderRadius: 0,
+						imageWidth: 120,
+						imageHeight: 90,
+						imageFill: 'clip',
+						displayImage: true,
+						displayTitle: true,
+						titleFontSize: 20,
+						titleFontColor: '#333',
+						titleFontFamily: 'Microsoft Yahei',
+						titleFontWeight: 'bold',
+						titlePaddingTop: 0,
+						titlePaddingRight: 0,
+						titlePaddingBottom: 10,
+						titlePaddingLeft: 16,
+						displayDesc: true,
+						descFontSize: 14,
+						descPaddingLeft: 14,
+						descFontColor: '#6b6b6b',
+						descFontFamily: 'Microsoft Yahei',
+						paddingTop: 0,
+						paddingRight: 0,
+						paddingBottom: 0,
+						paddingLeft: 0,
+						backgroundColor: '#fff',
+						hoverColor: '#ca0c16'
+					}
+				})
+			</script>
+			<div class="recommend-item-box" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/gududedabai/article/details/80015527,BlogCommendFromBaidu_18"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/gududedabai/article/details/80015527,BlogCommendFromBaidu_18"}'>
+		<h4 class="text-truncate">
+			<a href="https://blog.csdn.net/gududedabai/article/details/80015527" target="_blank">
+				<em>GitHub</em><em>使用教程</em>详解与上传项目工程到<em>git</em>仓库			</a>
+		</h4>
+		<p class="content">
+			<a href="https://blog.csdn.net/gududedabai/article/details/80015527" target="_blank" >
+				转载自：https://blog.csdn.net/kabulore/article/details/51801337                  https://www.cnblogs.com...			</a>
+		</p>
+		<div class="info-box d-flex align-content-center">
+			<p>
+				<a class="avatar" src="https://blog.csdn.net/gududedabai" title="gududedabai" target="_blank">
+					<img src="https://avatar.csdn.net/7/C/5/3_gududedabai.jpg" alt="gududedabai" class="avatar-pic">
+					<span class="name">gududedabai</span>
+				</a>
+			</p>
+			<p>
+				<span class="date">2018-04-20 10:51:34</span>
+			</p>
+			<p>
+				<span class="read-num">阅读数：121</span>
+			</p>
+		</div>
+	</div>
+					<div class="recommend-item-box" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/qq_36667170/article/details/79085301,BlogCommendFromBaidu_3"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/qq_36667170/article/details/79085301,BlogCommendFromBaidu_3"}'>
+		<h4 class="text-truncate">
+			<a href="https://blog.csdn.net/qq_36667170/article/details/79085301" target="_blank">
+				<em>GitHub</em>教程 <em>Git</em> Bash<em>详细</em>教程（上）			</a>
+		</h4>
+		<p class="content">
+			<a href="https://blog.csdn.net/qq_36667170/article/details/79085301" target="_blank" >
+				　　作为一个萌新，我翻遍了网上的Git Bash教程，可能因为我理解力比较差，经常看不懂教程上在说什么。 (。-`ω´-)所以我决定自己一边摸索一边记录，写教程造福那些理解力跟我一样差的人……
+
+
+
+...			</a>
+		</p>
+		<div class="info-box d-flex align-content-center">
+			<p>
+				<a class="avatar" src="https://blog.csdn.net/qq_36667170" title="qq_36667170" target="_blank">
+					<img src="https://avatar.csdn.net/2/5/5/3_qq_36667170.jpg" alt="qq_36667170" class="avatar-pic">
+					<span class="name">qq_36667170</span>
+				</a>
+			</p>
+			<p>
+				<span class="date">2018-01-17 16:12:58</span>
+			</p>
+			<p>
+				<span class="read-num">阅读数：1368</span>
+			</p>
+		</div>
+	</div>
+					<div class="recommend-item-box" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/qq_37788558/article/details/72821308,BlogCommendFromBaidu_4"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/qq_37788558/article/details/72821308,BlogCommendFromBaidu_4"}'>
+		<h4 class="text-truncate">
+			<a href="https://blog.csdn.net/qq_37788558/article/details/72821308" target="_blank">
+				<em>github</em><em>使用教程</em>【适用小白】			</a>
+		</h4>
+		<p class="content">
+			<a href="https://blog.csdn.net/qq_37788558/article/details/72821308" target="_blank" >
+				说来也惭愧，我是最近开始用github，小白一个，昨天研究了一个下午。终于可以上传了，所以今天写点，一来分享是自己的一些经验，二来也是做个记录，万一哪天又不记得了:)
+
+
+
+　　废话不多说，直...			</a>
+		</p>
+		<div class="info-box d-flex align-content-center">
+			<p>
+				<a class="avatar" src="https://blog.csdn.net/qq_37788558" title="qq_37788558" target="_blank">
+					<img src="https://avatar.csdn.net/F/E/5/3_qq_37788558.jpg" alt="qq_37788558" class="avatar-pic">
+					<span class="name">qq_37788558</span>
+				</a>
+			</p>
+			<p>
+				<span class="date">2017-05-31 16:23:09</span>
+			</p>
+			<p>
+				<span class="read-num">阅读数：3733</span>
+			</p>
+		</div>
+	</div>
+					<div class="recommend-item-box" data-track-view='{"mod":"popu_387","con":",https://blog.csdn.net/tangbin330/article/details/9128765,BlogCommendFromBaidu_5"}' data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/tangbin330/article/details/9128765,BlogCommendFromBaidu_5"}'>
+		<h4 class="text-truncate">
+			<a href="https://blog.csdn.net/tangbin330/article/details/9128765" target="_blank">
+				<em>GitHub</em><em>详细</em>教程			</a>
+		</h4>
+		<p class="content">
+			<a href="https://blog.csdn.net/tangbin330/article/details/9128765" target="_blank" >
+				GitHub详细教程
+
+
+
+Table of Contents
+
+
+1 Git详细教程
+
+1.1 Git简介
+
+1.1.1 Git是何方神圣?1.1.2 重要的术语1.1.3 索...			</a>
+		</p>
+		<div class="info-box d-flex align-content-center">
+			<p>
+				<a class="avatar" src="https://blog.csdn.net/tangbin330" title="tangbin330" target="_blank">
+					<img src="https://avatar.csdn.net/8/E/E/3_tangbin330.jpg" alt="tangbin330" class="avatar-pic">
+					<span class="name">tangbin330</span>
+				</a>
+			</p>
+			<p>
+				<span class="date">2013-06-19 14:47:57</span>
+			</p>
+			<p>
+				<span class="read-num">阅读数：93035</span>
+			</p>
+		</div>
+	</div>
+			
+            <div class="recommend-loading-box">
+                <img src='https://csdnimg.cn/release/phoenix/images/feedLoading.gif'>
+            </div>
+            <div class="recommend-end-box">
+                <p class="text-center">没有更多推荐了，<a href="https://blog.csdn.net/" class="c-blue c-blue-hover c-blue-focus">返回首页</a></p>
+            </div>
+        </div>
+    </main>
+    <aside>
+		    <div id="asideProfile" class="aside-box">
+    <h3 class="aside-title">个人资料</h3>
+    <div class="profile-intro d-flex">
+        <div class="avatar-box d-flex justify-content-center flex-column">
+            <a href="https://blog.csdn.net/javaandroid730">
+                <img src="https://avatar.csdn.net/F/2/A/3_javaandroid730.jpg" class="avatar_pic">
+            </a>
+        </div>
+        <div class="user-info d-flex justify-content-center flex-column">
+            <p class="name csdn-tracking-statistics tracking-click" data-mod="popu_379">
+                <a href="https://blog.csdn.net/javaandroid730" target="_blank" class="text-truncate" id="uid">javaandroid730</a>
+            </p>
+                    </div>
+                <div class="opt-box d-flex justify-content-center flex-column">
+            <span  class="csdn-tracking-statistics tracking-click" data-mod="popu_379">
+                                <a class="btn btn-sm btn-red-hollow" href="https://passport.csdn.net/account/login?from=https://blog.csdn.net/javaandroid730/article/details/53522872" target="_self">关注</a>
+                            </span>
+                    </div>
+            </div>
+    <div class="data-info d-flex item-tiling">
+                <dl class="text-center" title="54">
+                        <dt><a href="https://blog.csdn.net/javaandroid730?t=1">原创</a></dt>
+            <dd><a href="https://blog.csdn.net/javaandroid730?t=1"><span class="count">54</span></a></dd>
+                    </dl>
+        <dl class="text-center" title="55">
+            <dt>粉丝</dt>
+            <dd><span class="count" id="fan">55</span></dd>
+        </dl>
+        <dl class="text-center" title="43">
+            <dt>喜欢</dt>
+            <dd><span class="count">43</span></dd>
+        </dl>
+        <dl class="text-center" title="31">
+            <dt>评论</dt>
+            <dd><span class="count">31</span></dd>
+        </dl>
+    </div>
+    <div class="grade-box clearfix">
+        <dl>
+            <dt>等级：</dt>
+            <dd>
+                <a href="https://blog.csdn.net/home/help.html#level" title="4级,点击查看等级说明" target="_blank">
+                    <svg class="icon icon-level" aria-hidden="true">
+                        <use xlink:href="#csdnc-bloglevel-4"></use>
+                    </svg>
+                </a>
+            </dd>
+        </dl>
+        <dl>
+            <dt>访问：</dt>
+            <dd title="192800">
+                19万+            </dd>
+        </dl>
+        <dl>
+            <dt>积分：</dt>
+            <dd title="1692">
+                1692            </dd>
+        </dl>
+        <dl title="31404">
+            <dt>排名：</dt>
+            <dd>3万+</dd>
+        </dl>
+    </div>
+        <div class="badge-box d-flex">
+        <span>勋章：</span>
+                        <a class="icon-badge" title="持之以恒">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#csdnc-m-lasting"></use>
+            </svg>
+            <div class="icon-arrow"></div>
+            <div class="grade-detail-box item2">
+                <div class="pos-box">
+                    <div class="left-box d-flex justify-content-center align-items-center flex-column">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#csdnc-m-lasting"></use>
+                        </svg>
+                        <p>持之以恒</p>
+                    </div>
+                    <div class="right-box d-flex justify-content-center align-items-center">
+                        授予每个自然月内发布4篇或4篇以上原创或翻译IT博文的用户。不积跬步无以至千里，不积小流无以成江海，程序人生的精彩需要坚持不懈地积累！
+                    </div>
+                </div>
+            </div>
+        </a>
+                            </div>
+    </div>		    <div class="csdn-tracking-statistics mb8 box-shadow" data-pid="blog" data-mod="popu_4" style="height:250px;">
+    <div class="aside-content text-center" id="cpro_u2734133">
+              <script type="text/javascript" src="//cee1.iteye.com/lgyyovfyh.js"></script>
+          </div>
+</div>
+		    <div id="asideNewArticle" class="aside-box">
+    <h3 class="aside-title">最新文章</h3>
+    <div class="aside-content">
+        <ul class="inf_list clearfix csdn-tracking-statistics tracking-click" data-mod="popu_382">
+                        <li class="clearfix">
+                <a href="https://blog.csdn.net/JavaAndroid730/article/details/72780338" target="_blank">Android6.0权限快速申请（基于RxJava2更优雅）</a>
+            </li>
+                        <li class="clearfix">
+                <a href="https://blog.csdn.net/JavaAndroid730/article/details/71601294" target="_blank">Android DataBinding（数据绑定）详解（二）</a>
+            </li>
+                        <li class="clearfix">
+                <a href="https://blog.csdn.net/JavaAndroid730/article/details/71599808" target="_blank">Android DataBinding（数据绑定）详解（一）</a>
+            </li>
+                        <li class="clearfix">
+                <a href="https://blog.csdn.net/JavaAndroid730/article/details/71421870" target="_blank">Retrofit2+RxJava2依赖包一览</a>
+            </li>
+                        <li class="clearfix">
+                <a href="https://blog.csdn.net/JavaAndroid730/article/details/71286384" target="_blank">WebView加载HTML格式网页</a>
+            </li>
+                    </ul>
+    </div>
+</div>
+		    		    <div id="asideCategory" class="aside-box">
+    <h3 class="aside-title">个人分类</h3>
+    <div class="aside-content">
+        <ul>
+                        <li>
+                <a href="https://blog.csdn.net/javaandroid730/article/category/6508850">
+                    Android核心                    <span class="count float-right">67篇</span>
+                </a>
+            </li>
+                        <li>
+                <a href="https://blog.csdn.net/javaandroid730/article/category/6627272">
+                    Java基础                    <span class="count float-right">4篇</span>
+                </a>
+            </li>
+                    </ul>
+    </div>
+    </div>
+		    <div id="asideArchive" class="aside-box">
+    <h3 class="aside-title">归档</h3>
+    <div class="aside-content">
+        <ul class="archive-list">
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/javaandroid730/article/month/2017/05">
+                    2017年5月                    <span class="count float-right">5篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/javaandroid730/article/month/2017/04">
+                    2017年4月                    <span class="count float-right">3篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/javaandroid730/article/month/2017/03">
+                    2017年3月                    <span class="count float-right">12篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/javaandroid730/article/month/2016/12">
+                    2016年12月                    <span class="count float-right">14篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/javaandroid730/article/month/2016/11">
+                    2016年11月                    <span class="count float-right">35篇</span>
+                </a>
+            </li>
+                    </ul>
+    </div>
+    </div>
+		    <div id="asideHotArticle" class="aside-box">
+	<h3 class="aside-title">热门文章</h3>
+	<div class="aside-content">
+		<ul class="hotArticle-list csdn-tracking-statistics tracking-click" data-mod="popu_521">
+							<li>
+					<a href="https://blog.csdn.net/javaandroid730/article/details/53522872">入门级：GitHub和Git超超超详细使用教程！</a>
+					<p class="read">阅读量：<span>95646</span></p>
+				</li>
+							<li>
+					<a href="https://blog.csdn.net/javaandroid730/article/details/53143649">Android中快速自定义圆形ImageView图形！</a>
+					<p class="read">阅读量：<span>14178</span></p>
+				</li>
+							<li>
+					<a href="https://blog.csdn.net/javaandroid730/article/details/53312555">Android中如何做Monkey测试</a>
+					<p class="read">阅读量：<span>7523</span></p>
+				</li>
+							<li>
+					<a href="https://blog.csdn.net/javaandroid730/article/details/53385749">Android实现二维码扫描（仿微信，轻量Zxing）</a>
+					<p class="read">阅读量：<span>6953</span></p>
+				</li>
+							<li>
+					<a href="https://blog.csdn.net/javaandroid730/article/details/65934864">Android Studio 点击运行，找不到夜神模拟器的解决办法</a>
+					<p class="read">阅读量：<span>4419</span></p>
+				</li>
+					</ul>
+	</div>
+</div>
+		    <div id="asideNewComments" class="aside-box">
+    <h3 class="aside-title">最新评论</h3>
+    <div class="aside-content">
+        <ul class="newcomment-list">
+                        <li>
+                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/javaandroid730/article/details/53522872#comments">入门级：GitHub和Git超超超...</a>
+                <p class="comment">
+                    <a href="https://my.csdn.net/l_mloveforever" class="user-name" target="_blank">l_mloveforever</a>：git使用教程，很好的总结分享!                </p>
+            </li>
+                        <li>
+                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/javaandroid730/article/details/53143649#comments">Android中快速自定义圆形Im...</a>
+                <p class="comment">
+                    <a href="https://my.csdn.net/fucaijin" class="user-name" target="_blank">fucaijin</a>：非常好用，简单又好用，我自己稍微改了一下就用了。非常棒，非常感谢                </p>
+            </li>
+                        <li>
+                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/javaandroid730/article/details/53791762#comments">Android右滑关闭当前Acti...</a>
+                <p class="comment">
+                    <a href="https://my.csdn.net/a1030260075" class="user-name" target="_blank">a1030260075</a>：首先谢谢作者的付出，我这里说下实际遇到的问题。
+1.除了&amp;lt;item name=&am...                </p>
+            </li>
+                        <li>
+                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/javaandroid730/article/details/53522872#comments">入门级：GitHub和Git超超超...</a>
+                <p class="comment">
+                    <a href="https://my.csdn.net/jiangjunshow" class="user-name" target="_blank">jiangjunshow</a>：写得不错！我最近也在写一系列的人工智能教程，通俗易懂，无需高等数学基础,教程也力求风趣幽默。点击我...                </p>
+            </li>
+                        <li>
+                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/javaandroid730/article/details/53522872#comments">入门级：GitHub和Git超超超...</a>
+                <p class="comment">
+                    <a href="https://my.csdn.net/KevinAshen" class="user-name" target="_blank">KevinAshen</a>：[reply]pythondafahao[/reply]
+输入库的名字就行 可以考虑用谷歌网页翻译                </p>
+            </li>
+                    </ul>
+    </div>
+</div>
+		<div id="asideFooter">
+			
+		<div class="aside-box">
+						<script type="text/javascript" src="//cee1.iteye.com/avneunkwb.js"></script>
+					</div>
+				<div class="aside-box">
+			<div class="persion_article">
+			</div>
+		</div>
+	</div>
+</aside>
+<script src="https://csdnimg.cn/pubfooter/js/publib_footer-1.0.3.js" data-isfootertrack="false" type="text/javascript"></script>
+<script>
+	$("a.flexible-btn").click(function(){
+		$(this).parents('div.aside-box').removeClass('flexible-box');
+		$(this).remove();
+	})
+</script>
+</div>
+<div class="mask-dark"></div>
+<div class="pulllog-box" style="display: block;">
+	<div class="pulllog clearfix">
+		<span class="text float-left">
+			<!-- 广告位：PC-博客内页底通 文字链位置 -->
+			<script>
+			(function() {
+				var s = "_" + Math.random().toString(36).slice(2);
+				document.write('<div id="baidufooter_0001"></div>');
+				(window.slotbydup=window.slotbydup || []).push({
+					id: '5851901',
+					container: 'baidufooter_0001',
+					size: '520,40',
+					display: 'inlay-fix'
+				});
+			})();
+			</script>
+			<script src="https://dup.baidustatic.com/js/os.js"></script>
+			<style>
+				#baidufooter_0001{
+					display: none !important;
+				}
+			</style>
+		</span>
+		<div class="pulllog-btn float-right clearfix">
+            <button class="pulllog-login float-left csdn-tracking-statistics tracking-click" data-mod="popu_557">
+                登录
+            </button>
+            <div class="pulllog-sigin float-left csdn-tracking-statistics tracking-click" data-mod="popu_558">
+                <a href="https://passport.csdn.net/account/mobileregister" target="_blank">注册</a>
+            </div>
+            <button class="btn-close">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#csdnc-times"></use>
+                </svg>
+            </button>
+		</div>
+	</div>
+</div>
+<div id="loginWrap" style="display:none"></div>
+<div class="tool-box">
+	<ul class="meau-list">
+		<li>
+			<button class="btn-like " title="点赞">
+				<svg class="icon active" aria-hidden="true">
+					<use xlink:href="#csdnc-thumbsup-ok"></use>
+				</svg><svg class="icon no-active" aria-hidden="true">
+					<use xlink:href="#csdnc-thumbsup"></use>
+				</svg>
+				<p>43</p>
+			</button>
+		</li>
+		<li>
+			<a class="btn-comments" title="写评论" href="#commentBox">
+				<svg class="icon" aria-hidden="true">
+					<use xlink:href="#csdnc-comments"></use>
+				</svg><br>写评论			</a>
+		</li>
+		<li class="toc-container-box" id="liTocBox">
+			<button class="btn-toc" title="目录">
+				<svg class="icon" aria-hidden="true">
+					<use xlink:href="#csdnc-contents"></use>
+				</svg><br>目录
+			</button>
+			<div class="toc-container">
+				<div class="pos-box">
+					<div class="icon-arrow"></div>
+					<div class="scroll-box">
+						<div class="toc-box"></div>
+					</div>
+				</div>
+				<div class="opt-box">
+					<button class="btn-opt prev nomore" title="向上">
+						<svg class="icon" aria-hidden="true">
+							<use xlink:href="#csdnc-chevronup"></use>
+						</svg>
+					</button>
+					<button class="btn-opt next">
+						<svg class="icon" aria-hidden="true">
+							<use xlink:href="#csdnc-chevrondown"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</li>
+		<li>
+			<button class="btn-bookmark" title="收藏">
+				<svg class="icon active" aria-hidden="true">
+					<use xlink:href="#csdnc-bookmark-ok"></use>
+				</svg><svg class="icon no-active" aria-hidden="true">
+					<use xlink:href="#csdnc-bookmark"></use>
+				</svg><br>收藏
+			</button>
+		</li>
+				<li class="bdsharebuttonbox">
+			<a class="btn-comments bds_weixin" data-cmd="weixin" title="微信分享">
+				<svg class="icon" aria-hidden="true">
+					<use xlink:href="#csdnc-wechat"></use>
+				</svg><br>微信
+			</a>
+		</li>
+		<li class="bdsharebuttonbox">
+			<a class="btn-comments bds_tsina" data-cmd="tsina" title="微博分享">
+				<svg class="icon" aria-hidden="true">
+					<use xlink:href="#csdnc-weibo"></use>
+				</svg><br>微博
+			</a>
+		</li>
+		<li class="bdsharebuttonbox">
+			<a class="btn-comments bds_qzone" data-cmd="qzone" title="QQ分享">
+				<svg class="icon" aria-hidden="true">
+					<use xlink:href="#csdnc-qq"></use>
+				</svg><br>QQ
+			</a>
+		</li>
+	</ul>
+</div>
+<script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "1", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'https://csdnimg.cn/static/api/js/share.js?v=89860594'];</script>
+<script>
+    var recommendCount = 10;
+    recommendCount = recommendCount > 1 ? (recommendCount + (recommendCount>6 ? 2 : 1)) : recommendCount;
+    var articleTit = "入门级：GitHub和Git超超超详细使用教程！";
+    var ChannelId = 1;
+    var articleId = "53522872";
+    var commentscount = 14;
+    var islock = false;
+    var curentUrl = "https://blog.csdn.net/javaandroid730/article/details/53522872";
+    var myUrl = "https://my.csdn.net/";
+    //1禁止评论，2正常
+    var commentAuth = 2;
+    //百度搜索
+    var baiduKey = "git%E5%85%A5%E9%97%A8";
+    var needInsertBaidu = true;
+    // 代码段样式
+    var codeStyle = '';
+    var highlight = ["\u5165\u95e8\u7ea7","github","git","\u8be6\u7ec6","\u4f7f\u7528\u6559\u7a0b"];//高亮数组
+</script>
+<script src="https://csdnimg.cn/public/sandalstrap/1.3/js/sandalstrap.min.js"></script>
+<script src="https://csdnimg.cn/release/phoenix/vendor/pagination/paging.js"></script>
+<script src='https://csdnimg.cn/public/common/gotop/js/goTop-v1.0.min.js?v201803151422'></script>
+<script>
+    GoTop({
+        right: 8,
+        hasReport: true,
+        reportFun: function() {
+            showReport(false,"入门级：GitHub和Git超超超详细使用教程！");
+        }
+    })
+</script>
+<script src="https://csdnimg.cn/release/phoenix/template/js/common-da13470b4c.min.js"></script>
+<script src="https://csdnimg.cn/release/phoenix/template/js/detail-e0d3bbff39.min.js"></script>
+<script src="https://csdnimg.cn/release/phoenix/themes/skin3-template/skin3-template-46c7bd3d86.min.js"></script>
+<script src="https://csdnimg.cn/search/baidu_search-1.1.2.js?v=201802071056&autorun=true&install=true&keyword=git%E5%85%A5%E9%97%A8"  type="text/javascript"></script>
+</body>
+<div class="box-box-default">
+    <a class="btn-remove">
+        关闭
+    </a>
+    <script type="text/javascript" src="//cee1.iteye.com/mhzzjepzz.js"></script>
+</div>
+<div class="box-box-large">
+    <a class="btn-remove">
+        关闭
+    </a>
+    <script type="text/javascript" src="//cee1.iteye.com/idvveasfs.js"></script>
+</div>
+<!-- 第四范式SDK -->
+<script src="https://nbrecsys.4paradigm.com/resource/js/sdk-csdn-smallflow.prod.0711.js" async defer></script>
+
+<!-- 高亮未与 markdown兼容  -->
+	<link rel="stylesheet" href="https://csdnimg.cn/release/blog_editor_html/release1.1.10/ckeditor/plugins/chart/chart.css" />
+	<script type="text/javascript" src="https://csdnimg.cn/release/blog_editor_html/release1.1.10/ckeditor/plugins/chart/lib/chart.min.js"></script>
+	<script type="text/javascript" src="https://csdnimg.cn/release/blog_editor_html/release1.1.10/ckeditor/plugins/chart/widget2chart.js"></script>
+	<link rel="stylesheet" href="https://csdnimg.cn/release/blog_editor_html/release1.1.10/ckeditor/plugins/codesnippet/lib/highlight/styles/atom-one-dark.css">
+	<script type="text/javascript" src="https://csdnimg.cn/release/phoenix/production/pc_wap_common-93244aa03c.js" /></script>
+
+	<script type="text/javascript">
+	$(function(){
+		var allEscRegex = /&(lt|gt|amp|quot|nbsp|shy|#\d{1,5});/g,
+		    namedEntities = {
+					lt: '<',
+					gt: '>',
+					amp: '&',
+					quot: '"',
+					nbsp: '\u00a0',
+					shy: '\u00ad'
+				}
+		var allEscDecode = function( match, code ) {
+				return namedEntities[ code ];
+		};
+		htmlDecodeAttr = function( text ) {
+				return text.replace( allEscRegex, allEscDecode );
+		}
+	  hljs.initHighlightingOnLoad();
+	  hljs.initCopyButtonOnLoad();
+	  hljs.initLineNumbersOnLoad();
+		if($('pre .language-plain').length>0){
+			$('pre .language-plain').each(function(i,e){
+				var highlightRe = hljs.highlightAuto(htmlDecodeAttr(e.innerHTML))
+				e.innerHTML = highlightRe.value;
+				e.className = 'language-'+highlightRe.language;
+			});
+		}
+	})
+	</script>
+</html>
